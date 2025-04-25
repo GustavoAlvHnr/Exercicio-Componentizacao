@@ -48,7 +48,7 @@
 
   <p>Eric-Emmanuel Schmitt has been awarded more than 20 literary prizes and distinctions, and in 2001 he received the title of Chevalier des Arts et des Lettres. His books have been translated into over 40 languages.</p>
 
-  < button>Acessar página do livro</button>
+  <button>Acessar página do livro</button>
 
 </div>
   <img src="/public/Schmitt_Nocognia_3D_500pcx 1.png" alt="livro">
@@ -138,7 +138,7 @@ header nav button{
 
  /*//////////////Gianluca-livro em destaque////////////////////////////////////////////////////////////////*/
 
-  section.lancamentos{
+ section.lancamentos{
     display: flex;
     font-size: 0.4rem;
 
@@ -151,34 +151,34 @@ header nav button{
   .lancamentos p{
     width: 29vw;
     padding: 1vw 0;
-    font-size: 0.5rem;
+    font-size: 1.3rem;
     margin-bottom: 1vw;
 
   }
   .lancamentos div p.verde{
     color: #27AE60;
     border: #27AE60 solid 1px;
-    width: 6vw;
+    width: 8.5vw;
     border-radius: 0.3vw;
     padding: 0.4vw 0 0.4vw 0.5vw;
-    font-size: 0.5rem;
+    font-size: 1.3rem;
 
 
   }
   .lancamentos img{
-    width: 25vw;
+    width: 29vw;
   }
   .lancamentos button{
-    font-size: 0.5rem;
+    font-size: 1.3rem;
     color: white;
     background-color: #27AE60;
     border: none;
     border-radius: 0.2vw;
     padding: 1vw;
-    cursor: pointer;
   }
   .lancamentos h1{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 3rem;
+    padding: 1vw 0 1vw 0;
   }
 </style>
