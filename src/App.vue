@@ -51,7 +51,13 @@
   <button>Acessar página do livro</button>
 
 </div>
+<figure>
   <img src="/public/Schmitt_Nocognia_3D_500pcx 1.png" alt="livro">
+
+  <figcaption>
+    *within the stock limit
+  </figcaption>
+</figure>
 
 </section>
     </main>
@@ -145,7 +151,7 @@ header nav button{
   }
 
   .lancamentos div{
-    margin: 8vw 8vw 8vw 20vw;
+    margin: 5vw auto;
 
   }
   .lancamentos p{
@@ -153,6 +159,8 @@ header nav button{
     padding: 1vw 0;
     font-size: 1.3rem;
     margin-bottom: 1vw;
+    line-height: 1.7vw;
+    color: #4d4c4c;
 
   }
   .lancamentos div p.verde{
@@ -160,13 +168,16 @@ header nav button{
     border: #27AE60 solid 1px;
     width: 8.5vw;
     border-radius: 0.3vw;
-    padding: 0.4vw 0 0.4vw 0.5vw;
+    padding: 0.5vw 0 0.5vw 0.5vw;
     font-size: 1.3rem;
+    margin-top: 3vw;
 
 
   }
-  .lancamentos img{
-    width: 29vw;
+  .lancamentos figure img{
+    width: 26vw;
+    margin-bottom: -2.9vw;
+    margin-right: 13vw;
   }
   .lancamentos button{
     font-size: 1.3rem;
@@ -178,7 +189,17 @@ header nav button{
   }
   .lancamentos h1{
     font-weight: bold;
-    font-size: 3rem;
-    padding: 1vw 0 1vw 0;
+    font-size: 3.5rem;
+    padding: 0 0 1vw 0;
+    color: #382C2C;
+  }
+
+  .lancamentos figure figcaption{
+
+    margin: 0 0 0 16vw;
+
+    font-size: 1.5rem;
+
+
   }
 </style>
