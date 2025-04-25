@@ -1,58 +1,46 @@
 <script setup>
 
-import { ref, computed } from 'vue';
-
-const listaLivros = ref([
-  { nome: 'Chain of Iron: Volume 2',
-    imagem: '/public/image1.png',
-    autor: 'Cassandra Clare',
- },
-  { nome: 'Chain of Thorns',
-   imagem: '/public/image2.png',
-   autor: 'Cassandra Clare',
-  },
-  { nome: 'City of Fallen Angels',
-    imagem: '/public/image3.png',
-    autor: 'Cassandra Clare',
-
-  },
-  { nome: 'Nona the Ninth',
-    imagem: '/public/image4.png',
-    autor: 'Cassandra Clare',
-
-  },
-  { nome: 'Harlem Shuffle',
-    imagem: '/public/image5.png',
-    autor: 'Colson Whitehead',
-
-  },
-  { nome: 'Two Old Women',
-    imagem: '/public/image6.png',
-    autor: 'Velma Wallis',
-
-  },
-  { nome: 'Carrie Soto Is Back',
-    imagem: '/public/image7.png',
-    autor: 'Taylor Jenkins Reid',
-
-  },
-  { nome: 'Book Lovers',
-    imagem: '/public/image8.png',
-    autor: 'Emily Henry',
-
-  }
-
-])
-
 </script>
 
 <template>
-<body>
+  <body class="corpo">
+    <header>
+      <a href="#"><span class="conteudo1">IFBooks</span> <span class="conteudo2">Apreço a leitura</span></a>
 
+      <form>
+        <input type="text" placeholder="Pesquisar" />
+      </form>
 
-<main>
-
-<section class="lancamentos">
+      <nav>
+        <ul>
+          <li>
+            <button class="nave">Termos</button>
+          </li>
+          <li>
+            <button class="nave">Equipe</button>
+          </li>
+          <li>
+            <button class="nave">Envio</button>
+          </li>
+          <li>
+            <button class="nave">Devoluções</button>
+          </li>
+        </ul>
+      </nav>
+        <ul>
+          <li>
+            <button class="icon"><font-awesome-icon icon="fa-solid fa-cart-shopping" /></button>
+          </li>
+          <li>
+            <button class="icon" id="coracao"><font-awesome-icon icon="fa-solid fa-heart" /></button>
+          </li>
+          <li>
+            <button class="icon"><font-awesome-icon icon="fa-solid fa-user" /></button>
+          </li>
+        </ul>
+    </header>
+    <main>
+    <section class="lancamentos">
   <div>
   <p class="verde">Autor de Abril</p>
 
@@ -60,35 +48,93 @@ const listaLivros = ref([
 
   <p>Eric-Emmanuel Schmitt has been awarded more than 20 literary prizes and distinctions, and in 2001 he received the title of Chevalier des Arts et des Lettres. His books have been translated into over 40 languages.</p>
 
-  <button>Acessar página do livro</button>
+  < button>Acessar página do livro</button>
 
 </div>
   <img src="/public/Schmitt_Nocognia_3D_500pcx 1.png" alt="livro">
 
 </section>
-
-<section class="sessaoLivro">
-
-
-  <ul>
-    <li v-for="itens in listaLivros" class="abaLivros">
-
-      <img :src="itens.imagem" alt="">
-      <p>{{ itens.nome }}</p>
-      <p>{{ itens.autor }}</p>
-
-    </li>
-  </ul>
-
-</section>
-</main>
-
-
-
-</body>
+    </main>
+  </body>
 </template>
 
 <style scoped>
+/*////////
+Css do Header (Gustavo)
+////////*/
+body.corpo {
+  background-color: white;
+}
+header {
+  display: flex;
+  padding: 3vh 8vw 1.4vw 8vw;
+  flex-direction: row;
+  border-bottom: #27ae60 solid 2px;
+  font-size: 1.1rem;
+  justify-content: space-around;
+}
+header nav ul {
+  display: flex;
+}
+header ul{
+  display: flex;
+}
+header a{
+  display: flex;
+}
+.conteudo1{
+  color: #231f2d;
+  font-weight: bolder;
+  margin: 0.4vw 0.2vw 0 0;
+}
+.conteudo2{
+  color: transparent;
+  position: relative;
+}
+.conteudo2::before{
+  content: "apreço a \A leitura";
+  color: #27ae60;
+  border-left: #27ae60 solid 2px;
+  padding-left: 0.156vw;
+  white-space: pre-line;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header form input{
+  color: #b8b8b8;
+  background-color: #f1f1f1;
+  border: none;
+  width: 19.586vw;
+  height: 3.605vh;
+  background-image: url(/public/images/magnifying-glass-solid.svg);
+  background-repeat: no-repeat;
+  background-position: 17.9vw;
+  background-size: 1.042vw 2vh;
+  padding: 0 0 0 1vw;
+  margin: 0.2vw 0 0 0;
+}
+header button{
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 0.4vw;
+  color: #7b7881;
+  font-size: 1.1rem;
+}
+.nave{
+  padding: 0 1vw;
+}
+.icon{
+  color: #27ae60;
+  padding: 0 1vw 0 1vw;
+}
+#coracao{
+  border-left: #27ae60 solid 2px;
+  border-right: #27ae60 solid 2px;
+}
+header nav button{
+  padding: 0 0.5vw;
+}
 
  /*//////////////Gianluca-livro em destaque////////////////////////////////////////////////////////////////*/
 
@@ -134,22 +180,5 @@ const listaLivros = ref([
   .lancamentos h1{
     font-weight: bold;
     font-size: 1.5rem;
-  }
-  /*/////////////////////////////gianluca-lista_livros////////////////////////////////////*/
-
- .sessaoLivro ul li img{
-    width: 15vw;
-  }
- .sessaoLivro ul{
-    display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-
-  margin: 0 auto;
-  list-style-type: none;
-
-  }
-  .sessaoLivro ul li{
-    padding: 0 1vw 1vw 1vw;
   }
 </style>
