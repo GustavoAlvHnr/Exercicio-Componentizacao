@@ -14,12 +14,14 @@ const listaLivros = ref([
   imagem: '/public/image2.png',
   autor: 'Cassandra Clare',
   preco: 23.24,
+  curtidas: 'fa-regular fa-heart',
 
  },
  { nome: 'City of Fallen Angels',
    imagem: '/public/image3.png',
    autor: 'Cassandra Clare',
    preco: 13.94,
+   curtidas: 'fa-regular fa-heart',
 
 
  },
@@ -27,6 +29,7 @@ const listaLivros = ref([
    imagem: '/public/image4.png',
    autor: 'Cassandra Clare',
    preco: 16.84,
+   curtidas: 'fa-regular fa-heart',
 
 
  },
@@ -42,6 +45,7 @@ const listaLivros = ref([
    imagem: '/public/image6.png',
    autor: 'Velma Wallis',
    preco: 13.95,
+   curtidas: 'fa-regular fa-heart',
 
 
  },
@@ -49,6 +53,7 @@ const listaLivros = ref([
    imagem: '/public/image7.png',
    autor: 'Taylor Jenkins Reid',
    preco: 26.04,
+   curtidas: 'fa-regular fa-heart',
 
 
  },
@@ -56,6 +61,7 @@ const listaLivros = ref([
    imagem: '/public/image8.png',
    autor: 'Emily Henry',
    preco: 15.81,
+   curtidas: 'fa-regular fa-heart',
 
 
  },
@@ -161,7 +167,7 @@ const adicionar = (itens) => {
 
     <div class="junto">
     <p class="preco">R${{ itens.preco}}</p>
-    <p class="curtir"><font-awesome-icon icon="fa-regular fa-heart" />
+    <p class="curtir"><font-awesome-icon :icon="itens.curtidas" />
 
 </p>
     </div>
@@ -389,6 +395,7 @@ section.lancamentos{
  .curtir{
   font-size: 2vw;
   color: #27AE60;
+  margin-bottom: -8vw;
  }
  .junto{
   display: flex;
