@@ -155,7 +155,7 @@ section.lancamentos{
     display: flex;
     font-size: 0.4rem;
   }
-  }
+
   .lancamentos figure img{
     width: 26vw;
     margin-bottom: -2.9vw;
@@ -178,6 +178,7 @@ section.lancamentos{
   .lancamentos figure figcaption{
     margin: 0 0 0 16vw;
     font-size: 1.5rem;
+    color: #231f2d;
   }
 .lancamentos div{
     margin: 5vw auto;
@@ -193,7 +194,7 @@ section.lancamentos{
 .lancamentos div p.verde{
     color: #27AE60;
     border: #27AE60 solid 1px;
-    width: 8.5vw;
+    width: 27.5%;
     border-radius: 0.3vw;
     padding: 0.5vw 0 0.5vw 0.5vw;
     font-size: 1.3rem;
