@@ -1,13 +1,88 @@
-<script setup></script>
+<script setup>
+
+import { ref, computed } from 'vue';
+
+
+const listaLivros = ref([
+ { nome: 'Chain of Iron: Volume 2',
+   imagem: '/public/image1.png',
+   autor: 'Cassandra Clare',
+   preco: 23.24,
+
+},
+ { nome: 'Chain of Thorns',
+  imagem: '/public/image2.png',
+  autor: 'Cassandra Clare',
+  preco: 23.24,
+
+ },
+ { nome: 'City of Fallen Angels',
+   imagem: '/public/image3.png',
+   autor: 'Cassandra Clare',
+   preco: 13.94,
+
+
+ },
+ { nome: 'Nona the Ninth',
+   imagem: '/public/image4.png',
+   autor: 'Cassandra Clare',
+   preco: 16.84,
+
+
+ },
+ { nome: 'Harlem Shuffle',
+   imagem: '/public/image5.png',
+   autor: 'Colson Whitehead',
+   preco: 26.92,
+
+
+
+ },
+ { nome: 'Two Old Women',
+   imagem: '/public/image6.png',
+   autor: 'Velma Wallis',
+   preco: 13.95,
+
+
+ },
+ { nome: 'Carrie Soto Is Back',
+   imagem: '/public/image7.png',
+   autor: 'Taylor Jenkins Reid',
+   preco: 26.04,
+
+
+ },
+ { nome: 'Book Lovers',
+   imagem: '/public/image8.png',
+   autor: 'Emily Henry',
+   preco: 15.81,
+
+
+ },
+
+
+]);
+
+let cart = ref([]);
+
+const adicionar = (itens) => {
+      cart.value.push(itens.preco);
+    };
+
+
+   const total = computed(() => {
+      return cart.value.reduce((sum, num) => sum + num, 0);
+    });
+
+</script>
 
 <template>
   <body class="corpo">
     <header>
       <a href="#"
-        ><span class="conteudo1">IFBooks</span> <span class="conteudo2">Apreço a leitura</span></a
-      >
+        ><span class="conteudo1">IFBooks</span> <span class="conteudo2">Apreço a leitura</span></a>
       <form>
-        <input type="text" placeholder="Pesquisar" />
+        <input type="text" placeholder="Pesquisar"/>
       </form>
 
       <nav>
@@ -69,6 +144,44 @@
           </li>
         </ul>
       </div>
+      <section class="sessaoLivro">
+
+        <h2>Lançamentos</h2>
+
+
+
+
+<ul>
+  <li v-for="itens in listaLivros" class="abaLivros">
+
+
+    <img :src="itens.imagem" alt="livros">
+    <p class="nome">{{ itens.nome }}</p>
+    <p class="autor">{{ itens.autor }}</p>
+
+    <div class="junto">
+    <p class="preco">R${{ itens.preco}}</p>
+    <p class="curtir"><font-awesome-icon icon="fa-regular fa-heart" />
+
+</p>
+    </div>
+
+
+    <button @click="adicionar(itens)"><font-awesome-icon class="espaco" icon="fa-solid fa-cart-shopping"/>Comprar</button>
+    <p>{{ index }}</p>
+
+
+  </li>
+</ul>
+
+
+
+
+</section>
+  <p class="teste">preco{{ cart }}</p>
+  <p class="teste">{{ total }}</p>
+
+
     </main>
   </body>
 </template>
@@ -226,4 +339,77 @@ section.lancamentos{
 .icones ul li p{
   padding: 0 2vw;
 }
+
+/*//////////////////////////////Gianluca-Lista livros///////////////////////////////////////////*/
+
+
+.sessaoLivro h2{
+  color: #231f2d;
+  margin-left: 5vw;
+  padding: 3vw 0;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.sessaoLivro ul{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+
+
+ list-style-type: none;
+
+
+
+ }
+ .sessaoLivro ul li{
+   padding: 0 1vw 1vw 1vw;
+   color: #231f2d;
+  width: 350px;
+
+ }
+ .sessaoLivro ul img{
+  height: 26.06vw;
+
+ }
+ .nome{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1vw 0;
+ }
+ .autor{
+  font-size: 1rem;
+ padding-bottom: 1vw;
+ }
+ .preco{
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-right: 10vw;
+ }
+ .curtir{
+  font-size: 2vw;
+  color: #27AE60;
+ }
+ .junto{
+  display: flex;
+
+ }
+ .abaLivros button{
+  background-color: #27AE60;
+  color: white;
+  width: 85%;
+  padding: 1vw;
+  font-size: 1rem;
+  margin-top: 2vw;
+  border: none;
+  margin-bottom: 6vw;
+ }
+ .abaLivros .espaco{
+  margin-right: 0.4vw;
+
+ }
+ .teste{
+  color: #231f2d;
+ }
+
 </style>
