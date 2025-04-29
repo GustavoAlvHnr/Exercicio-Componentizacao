@@ -158,7 +158,7 @@ const adicionar = (itens) => {
 
 
 <ul>
-  <li v-for="itens in listaLivros" class="abaLivros">
+  <li v-for="(itens, index) in listaLivros" :key="index" class="abaLivros">
 
 
     <img :src="itens.imagem" alt="livros">
@@ -361,6 +361,8 @@ section.lancamentos{
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   width: 80%;
+   margin: 0 auto;
 
 
  list-style-type: none;
@@ -371,7 +373,7 @@ section.lancamentos{
  .sessaoLivro ul li{
    padding: 0 1vw 1vw 1vw;
    color: #231f2d;
-  width: 350px;
+  width: 18.91891891891892vw ;
 
  }
  .sessaoLivro ul img{
@@ -404,7 +406,7 @@ section.lancamentos{
  .abaLivros button{
   background-color: #27AE60;
   color: white;
-  width: 85%;
+  width: 100%;
   padding: 1vw;
   font-size: 1rem;
   margin-top: 2vw;
