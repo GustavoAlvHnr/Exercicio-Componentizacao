@@ -337,13 +337,13 @@ function adicionar(item){
           <li>
             <ul class="metodo">
               <li>
-                <img src="./images/paipal1.png" alt="">
+                <img src="/images/paipal1.png" alt="">
               </li>
               <li>
-                <img src="./images/MasterCard-Logo-19791.png" alt="">
+                <img src="/images/MasterCard-Logo-19791.png" alt="">
               </li>
               <li>
-                <img src="./images/VISA-card-logo-1.png" alt="">
+                <img src="/images/VISA-card-logo-1.png" alt="">
               </li>
             </ul>
           </li>
