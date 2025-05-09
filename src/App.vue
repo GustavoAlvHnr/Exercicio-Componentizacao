@@ -5,7 +5,7 @@ const listaLivros = ref([
   {
     id: 0,
     nome: 'Chain of Iron: Volume 2',
-    imagem: '/public/image1.png',
+    imagem: './images/image1.png',
     autor: 'Cassandra Clare',
     preco: 23.24,
     curtidas: 'fa-regular fa-heart'
@@ -13,7 +13,7 @@ const listaLivros = ref([
   {
     id: 1,
     nome: 'Chain of Thorns',
-    imagem: '/public/image2.png',
+    imagem: './images/image2.png',
     autor: 'Cassandra Clare',
     preco: 23.24,
     curtidas: 'fa-regular fa-heart',
@@ -21,7 +21,7 @@ const listaLivros = ref([
   {
     id: 2,
     nome: 'City of Fallen Angels',
-    imagem: '/public/image3.png',
+    imagem: './images/image3.png',
     autor: 'Cassandra Clare',
     preco: 13.94,
     curtidas: 'fa-regular fa-heart',
@@ -29,7 +29,7 @@ const listaLivros = ref([
   {
     id: 3,
     nome: 'Nona the Ninth',
-    imagem: '/public/image4.png',
+    imagem: './images/image4.png',
     autor: 'Cassandra Clare',
     preco: 16.84,
     curtidas: 'fa-regular fa-heart',
@@ -37,7 +37,7 @@ const listaLivros = ref([
   {
     id: 4,
     nome: 'Harlem Shuffle',
-    imagem: '/public/image5.png',
+    imagem: './images/image5.png',
     autor: 'Colson Whitehead',
     preco: 26.92,
     curtidas: 'fa-regular fa-heart',
@@ -45,7 +45,7 @@ const listaLivros = ref([
   {
     id: 5,
     nome: 'Two Old Women',
-    imagem: '/public/image6.png',
+    imagem: './images/image6.png',
     autor: 'Velma Wallis',
     preco: 13.95,
     curtidas: 'fa-regular fa-heart',
@@ -53,7 +53,7 @@ const listaLivros = ref([
   {
     id: 6,
     nome: 'Carrie Soto Is Back',
-    imagem: '/public/image7.png',
+    imagem: './public/images/image7.png',
     autor: 'Taylor Jenkins Reid',
     preco: 26.04,
     curtidas: 'fa-regular fa-heart',
@@ -61,7 +61,7 @@ const listaLivros = ref([
   {
     id: 7,
     nome: 'Book Lovers',
-    imagem: '/public/image8.png',
+    imagem: './images/image8.png',
     autor: 'Emily Henry',
     preco: 15.81,
     curtidas: 'fa-regular fa-heart',
@@ -194,7 +194,7 @@ function adicionar(item){
             <button>Acessar página do livro</button>
           </div>
           <figure>
-            <img src="/public/Schmitt_Nocognia_3D_500pcx 1.png" alt="livro" />
+            <img src="/images/Schmitt_Nocognia_3D_500pcx1.png" alt="livro" />
             <figcaption>*within the stock limit</figcaption>
           </figure>
         </section>
@@ -337,13 +337,13 @@ function adicionar(item){
           <li>
             <ul class="metodo">
               <li>
-                <img src="/public/paipal 1.png" alt="">
+                <img src="./images/paipal1.png" alt="">
               </li>
               <li>
-                <img src="/public/MasterCard-Logo-1979 1.png" alt="">
+                <img src="./images/MasterCard-Logo-19791.png" alt="">
               </li>
               <li>
-                <img src="/public/VISA-card-logo- 1.png" alt="">
+                <img src="./images/VISA-card-logo-1.png" alt="">
               </li>
             </ul>
           </li>
