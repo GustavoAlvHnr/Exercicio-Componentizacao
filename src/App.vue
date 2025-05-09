@@ -5,7 +5,7 @@ const listaLivros = ref([
   {
     id: 0,
     nome: 'Chain of Iron: Volume 2',
-    imagem: './images/image1.png',
+    imagem: '/images/image1.png',
     autor: 'Cassandra Clare',
     preco: 23.24,
     curtidas: 'fa-regular fa-heart'
@@ -13,7 +13,7 @@ const listaLivros = ref([
   {
     id: 1,
     nome: 'Chain of Thorns',
-    imagem: './images/image2.png',
+    imagem: '/images/image2.png',
     autor: 'Cassandra Clare',
     preco: 23.24,
     curtidas: 'fa-regular fa-heart',
@@ -21,7 +21,7 @@ const listaLivros = ref([
   {
     id: 2,
     nome: 'City of Fallen Angels',
-    imagem: './images/image3.png',
+    imagem: '/images/image3.png',
     autor: 'Cassandra Clare',
     preco: 13.94,
     curtidas: 'fa-regular fa-heart',
@@ -29,7 +29,7 @@ const listaLivros = ref([
   {
     id: 3,
     nome: 'Nona the Ninth',
-    imagem: './images/image4.png',
+    imagem: '/images/image4.png',
     autor: 'Cassandra Clare',
     preco: 16.84,
     curtidas: 'fa-regular fa-heart',
@@ -37,7 +37,7 @@ const listaLivros = ref([
   {
     id: 4,
     nome: 'Harlem Shuffle',
-    imagem: './images/image5.png',
+    imagem: '/images/image5.png',
     autor: 'Colson Whitehead',
     preco: 26.92,
     curtidas: 'fa-regular fa-heart',
@@ -45,7 +45,7 @@ const listaLivros = ref([
   {
     id: 5,
     nome: 'Two Old Women',
-    imagem: './images/image6.png',
+    imagem: '/images/image6.png',
     autor: 'Velma Wallis',
     preco: 13.95,
     curtidas: 'fa-regular fa-heart',
@@ -53,7 +53,7 @@ const listaLivros = ref([
   {
     id: 6,
     nome: 'Carrie Soto Is Back',
-    imagem: './images/image7.png',
+    imagem: '/images/image7.png',
     autor: 'Taylor Jenkins Reid',
     preco: 26.04,
     curtidas: 'fa-regular fa-heart',
@@ -61,7 +61,7 @@ const listaLivros = ref([
   {
     id: 7,
     nome: 'Book Lovers',
-    imagem: './images/image8.png',
+    imagem: '/images/image8.png',
     autor: 'Emily Henry',
     preco: 15.81,
     curtidas: 'fa-regular fa-heart',
