@@ -53,7 +53,7 @@ const listaLivros = ref([
   {
     id: 6,
     nome: 'Carrie Soto Is Back',
-    imagem: './public/images/image7.png',
+    imagem: './images/image7.png',
     autor: 'Taylor Jenkins Reid',
     preco: 26.04,
     curtidas: 'fa-regular fa-heart',
