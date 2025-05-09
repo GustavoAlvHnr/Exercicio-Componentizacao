@@ -230,12 +230,9 @@ function adicionar(item){
               <button @click="adicionar(item)">
                 <font-awesome-icon class="espaco" icon="fa-solid fa-cart-shopping" />Comprar
               </button>
-              <p>{{ index }}</p>
             </li>
           </ul>
         </section>
-        <p class="teste">preco{{ cart }}</p>
-        <p class="teste">{{ total }}</p>
       </main>
     <div v-else class="carrinho">
       <h1>
@@ -302,6 +299,60 @@ function adicionar(item){
           </div>
         </div>
       </div>
+      <footer>
+      <div class="container">
+        <ul>
+        <li>
+        <h3>
+          IFbooks
+        </h3>
+        </li>
+        <li>
+        <ul class="iconesfoot">
+        <li>
+          <font-awesome-icon icon="fa-brands fa-square-facebook"/>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-square-instagram"/>
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-brands fa-square-twitter"/>
+        </li>
+        </ul>
+        </li>
+        </ul>
+        <ul class="contato">
+          <li class="conta">
+            <p>Contato</p>
+          </li>
+          <li class="ico">
+            <font-awesome-icon icon="fa-solid fa-phone"/><p>+55 47 40045263</p>
+          </li>
+          <li class="ico">
+            <font-awesome-icon icon="fa-solid fa-clock"/><p>8h às 23h - Seg a Sex</p>
+          </li>
+          <li class="ico">
+            <font-awesome-icon icon="fa-solid fa-envelope"/><p>contato@ifbooks.com</p>
+          </li>
+          <li>
+            <ul class="metodo">
+              <li>
+                <img src="/public/paipal 1.png" alt="">
+              </li>
+              <li>
+                <img src="/public/MasterCard-Logo-1979 1.png" alt="">
+              </li>
+              <li>
+                <img src="/public/VISA-card-logo- 1.png" alt="">
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <p class="direitos">
+        &copy; Alguns direitos reservados. IFbooks 2025.
+      </p>
+      </footer>
   </body>
 </template>
 
@@ -523,6 +574,54 @@ section.lancamentos {
 .teste {
   color: #231f2d;
 }
+/*///////////////////////////
+    FEAT-5 (Gustavo)
+////////////////////////////*/
+footer{
+  background-color: #27ae60;
+  color: white;
+  padding-bottom: 2vw;
+  padding-top: 2vw;
+  font-size: 1rem;
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: rgba(255, 255, 255, 0.6) 2px solid;
+  padding: 0 13vw 1vw 13vw;
+}
+.iconesfoot{
+  display: flex;
+  padding-top: 1vw;
+  font-size: 2.5rem;
+}
+.iconesfoot li{
+  padding-right: 1vw;
+}
+.direitos{
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2vw;
+  display: flex;
+  justify-content: center;
+}
+.metodo{
+  display: flex;
+  padding-top: 3vw;
+  padding-bottom: 2vw;
+}
+.metodo li{
+  padding-right: 1vw;
+}
+.contato .ico{
+  display: flex;
+  padding-top: 1vw;
+}
+.contato .conta{
+  font-weight: bold;
+}
+.container .contato .ico p{
+  padding-left: 0.5vw;
+}
 /*////////////////////////////////////////
         FEAT-6 (Gustavo)
 ///////////////////////////////////////*/
@@ -621,7 +720,7 @@ section.lancamentos {
   padding: 0.5vw 2vw 0.5vw 2vw;
   color: white;
   border-radius: 4px;
-  height: 14%;
+  height: 2.4vw;
 }
 .total{
   margin-top: 3vw;
