@@ -28,9 +28,9 @@ defineEmits(['adicionar', 'diminuir', 'voltar-loja'])
               <p class="preco">R${{ item.preco }}</p>
               </div>
               <div class="botao">
-              <button @click="$emit('adicionar', item)">-</button>
+              <button @click="$emit('diminur', item)">-</button>
               <p class="quantidade">{{ item.quantidade }}</p>
-              <button @click="$emit('diminuir', item)">+</button>
+              <button @click="$emit('adicionar', item)">+</button>
               </div>
               <p>R${{ item.total }}</p>
             </div>
