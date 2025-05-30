@@ -57,3 +57,7 @@ Fonte
 html{
   font-family: "Inter";
 }
+body{
+  background-color: white;
+  color: #231f2d;
+}
