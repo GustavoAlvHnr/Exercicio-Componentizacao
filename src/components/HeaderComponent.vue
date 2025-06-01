@@ -3,9 +3,9 @@ defineEmits(['click-cart'])
 </script>
 <template>
 <header>
-        <a href="#"
-          ><span class="conteudo1">IFBooks</span> <span class="conteudo2">Apreço a leitura</span></a
-        >
+        <RouterLink to="/">
+          <span class="conteudo1">IFBooks</span> <span class="conteudo2">Apreço a leitura</span>
+        </RouterLink>
         <form>
           <input type="text" placeholder="Pesquisar" />
         </form>
@@ -15,7 +15,7 @@ defineEmits(['click-cart'])
               <button class="nave">Termos</button>
             </li>
             <li>
-              <button class="nave">Equipe</button>
+              <RouterLink to="/equipe" class="nave">Equipe</RouterLink>
             </li>
             <li>
               <button class="nave">Envio</button>
@@ -52,6 +52,11 @@ header {
   border-bottom: #27ae60 solid 2px;
   font-size: 1.1rem;
   justify-content: space-around;
+}
+header a{
+  color: #7b7881;
+  text-decoration: none;
+  margin: 0.4vw;
 }
 header nav ul {
   display: flex;
